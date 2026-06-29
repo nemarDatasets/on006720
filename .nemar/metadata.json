@@ -1,7 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Alpha power indexes working memory load for durations",
+  "description": "This dataset comprises raw magnetoencephalography (MEG) recordings from 23 healthy adult participants performing an n-item delayed temporal reproduction task, designed to investigate the neural dynamics of working memory load indexed by alpha power. Participants maintained sequences of auditory intervals in memory and reproduced them via button presses across eight task runs. The dataset includes concurrent electro-oculogram and electrocardiogram recordings, 3D electrode coordinates, resting-state MEG, and high-resolution structural MRI for source reconstruction, providing a comprehensive resource for studying neural mechanisms of working memory and auditory-motor processing.",
+  "methods_description": "MEG recordings were acquired using a whole-head Elekta Neuromag Vector View 306 system (102 triple-sensor elements) at 1 kHz sampling rate with 0.03 Hz high-pass and 330 Hz low-pass filtering in a magnetically shielded chamber. Participants performed an n-item delayed temporal reproduction task across eight runs (~10 min each), with head position monitored before each run. Concurrent EOG and ECG were recorded. A two-minute resting-state recording (eyes open) was acquired post-task. Structural MRI was obtained on a separate day using a Siemens 3T Magnetom Prisma Fit scanner (1 mm slice thickness, TR=2300 ms, TE=2.98 ms, flip angle=9°). Data were formatted in BIDS and anonymized using MNE-Python 1.8.0 and MNE-BIDS 1.6.0.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -14,12 +16,32 @@
     "Virginie van Wassenhove [1]": {},
     "[1] Cognitive Neuroimaging Unit, INSERM, CEA, Université Paris-Saclay, NeuroSpin, 91191 Gif/Yvette, France [2] Inria, CEA, Université Paris-Saclay, Palaiseau, France [3] Institute of Psychology, The Polish Academy of Sciences, ul. Jaracza 1, 00-378 Warsaw, Poland [4] Institut NeuroPSI - UMR9197 CNRS Université Paris-Saclay": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds006720.v1.0.0",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
     },
+    {
+      "term": "working memory"
+    },
+    {
+      "term": "alpha oscillations"
+    },
+    {
+      "term": "temporal reproduction"
+    },
+    {
+      "term": "auditory processing"
+    },
+    {
+      "term": "motor response"
+    },
+    {
+      "term": "source reconstruction"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "10.1101/2025.05.12.653390",
       "identifier_type": "DOI",
@@ -44,6 +66,11 @@
       "identifier": "10.1038/sdata.2018.110",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds006720.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -64,13 +91,13 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "Structural MRI Dataset",
   "modalities": [
     "anat",
     "meg"
   ],
-  "resource_type_specific": "Structural MRI Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "146.5 GB (248 files)"
   ],
   "formats": [
     ".dat",
@@ -78,49 +105,8 @@
     ".gz",
     ".json",
     ".md",
-    ".tsv"
+    ".tsv",
+    ".yml"
   ],
-  "description": "This dataset comprises raw magnetoencephalography (MEG) recordings from 23 healthy adult participants performing an n-item delayed temporal reproduction task, designed to investigate the neural dynamics of working memory load indexed by alpha power. Participants maintained sequences of auditory intervals in memory and reproduced them via motor responses across eight task runs, with concurrent electro-oculogram and electrocardiogram recordings. The dataset includes structural MRI acquired on a separate day for source reconstruction and resting-state MEG, providing a resource for studying neural mechanisms of working memory and auditory-motor integration in the healthy adult brain.",
-  "methods_description": "MEG recordings were acquired using a whole-head Elekta Neuromag Vector View 306 system (102 triple-sensor elements) at 1 kHz sampling rate with 0.03-330 Hz filtering in a magnetically shielded chamber. Participants performed an n-item delayed temporal reproduction task across eight runs (~10 min each), with head position tracked via indicator coils before each run. Concurrent EOG and ECG were recorded. A two-minute resting-state recording (eyes open) was acquired post-task. High-resolution structural MRI was obtained on a separate day using a Siemens 3T Magnetom Prisma Fit scanner (1 mm slice thickness, TR=2300 ms, TE=2.98 ms, flip angle=9°). Data were formatted in BIDS and anonymized using MNE-Python 1.8.0 and MNE-BIDS 1.6.0.",
-  "keywords": [
-    {
-      "term": "Magnetoencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
-    },
-    {
-      "term": "working memory",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D057566"
-    },
-    {
-      "term": "alpha oscillations",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000513"
-    },
-    {
-      "term": "delayed temporal reproduction"
-    },
-    {
-      "term": "auditory processing",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001307"
-    },
-    {
-      "term": "motor response"
-    },
-    {
-      "term": "source reconstruction"
-    },
-    {
-      "term": "resting state"
-    },
-    {
-      "term": "time perception"
-    },
-    {
-      "term": "temporal processing"
-    }
-  ],
-  "source_hash": "3b39c9d12a49dfecd2401658b449794a3e758cc0094e319ea30ef007099c7bb9"
+  "source_hash": "f680cc2b3fc2fee290c9c33fc172ceb29903a2bb391715372f535fcca5c05291"
 }
