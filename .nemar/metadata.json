@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Alpha power indexes working memory load for durations",
-  "description": "This dataset comprises raw magnetoencephalography (MEG) recordings from 23 healthy adult participants performing an n-item delayed temporal reproduction task, designed to investigate the neural dynamics of working memory load indexed by alpha power. Participants maintained sequences of auditory intervals in memory and reproduced them via button presses across eight task runs. The dataset includes concurrent electro-oculogram and electrocardiogram recordings, 3D electrode coordinates, resting-state MEG, and high-resolution structural MRI for source reconstruction, providing a comprehensive resource for studying neural mechanisms of working memory and auditory-motor processing.",
-  "methods_description": "MEG recordings were acquired using a whole-head Elekta Neuromag Vector View 306 system (102 triple-sensor elements) at 1 kHz sampling rate with 0.03 Hz high-pass and 330 Hz low-pass filtering in a magnetically shielded chamber. Participants performed an n-item delayed temporal reproduction task across eight runs (~10 min each), with head position monitored before each run. Concurrent EOG and ECG were recorded. A two-minute resting-state recording (eyes open) was acquired post-task. Structural MRI was obtained on a separate day using a Siemens 3T Magnetom Prisma Fit scanner (1 mm slice thickness, TR=2300 ms, TE=2.98 ms, flip angle=9°). Data were formatted in BIDS and anonymized using MNE-Python 1.8.0 and MNE-BIDS 1.6.0.",
+  "description": "This dataset comprises raw magnetoencephalography (MEG) recordings from 23 healthy adult participants performing an n-item delayed temporal reproduction task, designed to investigate the neural dynamics of working memory load indexed by alpha power. Participants maintained sequences of one or three temporal intervals in memory and reproduced them upon cue. The dataset includes concurrent electro-oculogram and electrocardiogram recordings, structural MRI for source reconstruction, and resting-state MEG, providing a comprehensive resource for studying neural mechanisms of working memory and auditory-motor processing.",
+  "methods_description": "MEG recordings were acquired using a whole-head Elekta Neuromag Vector View 306 system (102 triple-sensor elements) in a magnetically shielded chamber at 1 kHz sampling rate with 0.03-330 Hz filtering. Eight task runs (~10 min each) were recorded along with a 2-minute resting-state recording (eyes open). Head position was tracked before each run using indicator coils. Electrode positions and fiducial points were digitized using a 3D Polhemus digitizer. High-resolution structural MRI was acquired on a Siemens 3T Magnetom Prisma Fit scanner (1 mm slice thickness, TR=2300 ms, TE=2.98 ms, flip angle=9°). Data were formatted in BIDS and anonymized using MNE-Python 1.8.0 and MNE-BIDS 1.6.0.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -32,13 +32,10 @@
       "term": "temporal reproduction"
     },
     {
-      "term": "auditory processing"
-    },
-    {
-      "term": "motor response"
-    },
-    {
       "term": "source reconstruction"
+    },
+    {
+      "term": "auditory processing"
     }
   ],
   "related_identifiers": [
