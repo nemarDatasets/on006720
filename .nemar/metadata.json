@@ -1,0 +1,48 @@
+{
+  "version": "2.0",
+  "dataset_id": "on006720",
+  "source": "openneuro",
+  "source_id": "ds006720",
+  "title": "Alpha power indexes working memory load for durations",
+  "authors": {
+    "Sophie K. Herbst [1]": {},
+    "Izem Mangione [1]": {},
+    "Charbel-Raphaël Segerie [2]": {},
+    "Richard Höchenberger [2]": {},
+    "Tadeusz Kononowicz [1, 3, 4]": {},
+    "Alexandre Gramfort [2]": {},
+    "Virginie van Wassenhove [1]": {},
+    "[1] Cognitive Neuroimaging Unit, INSERM, CEA, Université Paris-Saclay, NeuroSpin, 91191 Gif/Yvette, France [2] Inria, CEA, Université Paris-Saclay, Palaiseau, France [3] Institute of Psychology, The Polish Academy of Sciences, ul. Jaracza 1, 00-378 Warsaw, Poland [4] Institut NeuroPSI - UMR9197 CNRS Université Paris-Saclay": {}
+  },
+  "license": "CC0",
+  "dataset_type": "raw",
+  "related_identifiers": [
+    {
+      "identifier": "10.18112/openneuro.ds006720.v1.0.0",
+      "identifier_type": "DOI",
+      "relation_type": "IsIdenticalTo"
+    }
+  ],
+  "pipeline_stage": "seeded",
+  "bids_version": "1.6.0",
+  "recording_modality": [
+    "anat",
+    "meg"
+  ],
+  "datatypes": [
+    "anat",
+    "meg"
+  ],
+  "funding_references": [
+    {
+      "funder_name": "Agence Nationale de la Recherche: AutoTime (ANR-16-CE37-0004-04) granted to Virginie van Wassenhove"
+    },
+    {
+      "funder_name": "Agence Nationale de la Recherche: meegBIDS.fr (ANR-19-DATA-0023), granted to Alexandre Gramfort (Coordinator), Sophie Herbst, Maximilien Chaumon, and Virginie van Wassenhove (collaborators)"
+    },
+    {
+      "funder_name": "European Union’s Horizon 2020 research and innovation program: FET Experience (grant agreement No. 101017727), to Virginie van Wassenhovegrant agreement No. 101017727, FET Experience granted to Virginie van Wassenhove"
+    }
+  ],
+  "acknowledgements": "NeuroSpin, NeuroPSI, UNICOG, Cognition & Brain Dynamics, and the Mind Lab are part of the DIM C-BRAINS, funded by the Conseil Régional d’Ile-de-France. We would also like to thank the NeuroSpin MEG platform staff, and in particular Leila Azizi, for their support during data acquisition."
+}
