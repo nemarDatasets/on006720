@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Alpha power indexes working memory load for durations",
-  "description": "This dataset comprises raw magnetoencephalography (MEG) recordings from 23 healthy adult participants performing an n-item delayed temporal reproduction task, designed to investigate the neural dynamics of working memory load indexed by alpha power. Participants maintained sequences of one or three temporal intervals in memory and reproduced them upon cue. The dataset includes concurrent electro-oculogram and electrocardiogram recordings, structural MRI for source reconstruction, and resting-state MEG, providing a comprehensive resource for studying neural mechanisms of working memory and auditory-motor processing.",
-  "methods_description": "MEG recordings were acquired using a whole-head Elekta Neuromag Vector View 306 system (102 triple-sensor elements) in a magnetically shielded chamber at 1 kHz sampling rate with 0.03-330 Hz filtering. Eight task runs (~10 min each) were recorded along with a 2-minute resting-state recording (eyes open). Head position was tracked before each run using indicator coils. Electrode positions and fiducial points were digitized using a 3D Polhemus digitizer. High-resolution structural MRI was acquired on a Siemens 3T Magnetom Prisma Fit scanner (1 mm slice thickness, TR=2300 ms, TE=2.98 ms, flip angle=9°). Data were formatted in BIDS and anonymized using MNE-Python 1.8.0 and MNE-BIDS 1.6.0.",
+  "description": "This dataset contains anonymized raw magnetoencephalography (MEG) recordings from 23 healthy adult participants performing an n-item delayed temporal reproduction task, designed to probe working memory for temporal durations. Alongside task MEG data, the dataset includes EOG and ECG recordings, digitized sensor and fiducial coordinates, a resting-state MEG recording, and individual high-resolution structural MRI scans for source reconstruction. The data support research on neural dynamics underlying working memory, auditory processing, and motor responses in the healthy adult brain.",
+  "methods_description": "MEG data were recorded using a whole-head Elekta Neuromag Vector View 306 MEG system (102 triple-sensor elements) in a magnetically shielded room, sampled at 1 kHz with 0.03 Hz high-pass and 330 Hz low-pass filters. EOG and ECG were recorded via external electrodes, and EEG electrode, HPI coil, and fiducial positions were digitized with a Polhemus 3D digitizer. Eight task runs (~10 min each) were recorded, followed by a two-minute eyes-open resting-state recording used for noise covariance estimation. Structural MRI scans were acquired on a separate day using a Siemens 3T Magnetom Prisma Fit scanner (slice thickness 1 mm, TR = 2300 ms, TE = 2.98 ms, flip angle = 9°). Data were formatted into BIDS using MNE-Python (v1.8.0) and MNE-BIDS (v1.6.0).",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -18,31 +18,34 @@
   },
   "keywords": [
     {
-      "term": "Magnetoencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
+      "term": "MEG"
     },
     {
       "term": "working memory"
     },
     {
-      "term": "alpha oscillations"
-    },
-    {
       "term": "temporal reproduction"
     },
     {
-      "term": "source reconstruction"
+      "term": "Magnetic Resonance Imaging",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008279"
     },
     {
-      "term": "auditory processing"
+      "term": "alpha power"
+    },
+    {
+      "term": "neural dynamics"
+    },
+    {
+      "term": "resting state"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1101/2025.05.12.653390",
       "identifier_type": "DOI",
-      "relation_type": "References"
+      "relation_type": "IsSupplementTo"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on006720",
@@ -82,9 +85,9 @@
       "award_title": "meegBIDS.fr"
     },
     {
-      "funder_name": "European Union",
+      "funder_name": "European Union's Horizon 2020 research and innovation program",
       "award_number": "101017727",
-      "award_title": "FET Experience (Horizon 2020)"
+      "award_title": "FET Experience"
     }
   ],
   "resource_type_general": "Dataset",
