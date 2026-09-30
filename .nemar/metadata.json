@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Alpha power indexes working memory load for durations",
-  "description": "This dataset contains anonymized raw magnetoencephalography (MEG) recordings from 23 healthy adult participants performing an n-item delayed temporal reproduction task, designed to probe working memory for temporal durations. Alongside task MEG data, the dataset includes EOG and ECG recordings, digitized sensor and fiducial coordinates, a resting-state MEG recording, and individual high-resolution structural MRI scans for source reconstruction. The data support research on neural dynamics underlying working memory, auditory processing, and motor responses in the healthy adult brain.",
-  "methods_description": "MEG data were recorded using a whole-head Elekta Neuromag Vector View 306 MEG system (102 triple-sensor elements) in a magnetically shielded room, sampled at 1 kHz with 0.03 Hz high-pass and 330 Hz low-pass filters. EOG and ECG were recorded via external electrodes, and EEG electrode, HPI coil, and fiducial positions were digitized with a Polhemus 3D digitizer. Eight task runs (~10 min each) were recorded, followed by a two-minute eyes-open resting-state recording used for noise covariance estimation. Structural MRI scans were acquired on a separate day using a Siemens 3T Magnetom Prisma Fit scanner (slice thickness 1 mm, TR = 2300 ms, TE = 2.98 ms, flip angle = 9°). Data were formatted into BIDS using MNE-Python (v1.8.0) and MNE-BIDS (v1.6.0).",
+  "description": "Raw magnetoencephalography (MEG) recordings from 23 healthy adults performing an n-item delayed temporal reproduction task. Participants held sequences of one or three empty auditory intervals in memory and then reproduced them by button press. The dataset also includes EOG, ECG, digitized head and electrode positions, a two-minute eyes-open resting-state recording, and individual anatomical MRI. It supports research on working memory dynamics, auditory processing, motor responses and resting activity.",
+  "methods_description": "MEG was recorded in a magnetically shielded room with a 306-channel Elekta Neuromag Vector View system, sampled at 1 kHz with 0.03-330 Hz online filtering, across 8 task runs of about 10 min each. Head position was measured with HPI coils before each run, and EEG electrode, HPI and fiducial positions were digitized with a Polhemus system. EOG and ECG were recorded, and a resting-state recording followed the task. Individual T1 anatomical MRI was acquired on a Siemens 3T Prisma Fit scanner (1 mm slices, TR 2300 ms, TE 2.98 ms, flip angle 9°). Data were converted to BIDS with MNE-BIDS.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -18,34 +18,33 @@
   },
   "keywords": [
     {
-      "term": "MEG"
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
     },
     {
-      "term": "working memory"
+      "term": "Memory, Short-Term",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D008570"
+    },
+    {
+      "term": "alpha oscillations"
     },
     {
       "term": "temporal reproduction"
     },
     {
-      "term": "Magnetic Resonance Imaging",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D008279"
+      "term": "time perception"
     },
     {
-      "term": "alpha power"
-    },
-    {
-      "term": "neural dynamics"
-    },
-    {
-      "term": "resting state"
+      "term": "MEG"
     }
   ],
   "related_identifiers": [
     {
       "identifier": "10.1101/2025.05.12.653390",
       "identifier_type": "DOI",
-      "relation_type": "IsSupplementTo"
+      "relation_type": "IsDescribedBy"
     },
     {
       "identifier": "https://github.com/nemarDatasets/on006720",
@@ -85,7 +84,7 @@
       "award_title": "meegBIDS.fr"
     },
     {
-      "funder_name": "European Union's Horizon 2020 research and innovation program",
+      "funder_name": "European Union Horizon 2020",
       "award_number": "101017727",
       "award_title": "FET Experience"
     }
@@ -97,7 +96,7 @@
     "meg"
   ],
   "sizes": [
-    "146.5 GB (248 files)"
+    "136 GB (248 files)"
   ],
   "formats": [
     ".dat",
